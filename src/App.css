@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@700&family=Manrope:wght@800&family=Merriweather:ital@1&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@700&family=Manrope:wght@800&family=Merriweather:ital@1&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&family=League+Spartan:wght@700&family=Manrope:wght@800&family=Merriweather:ital@1&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500&display=swap"); 
+body {
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(225, 21%, 49%);
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body #root {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+body #root .alltogether {
+  height: 650px;
+  width: 500px;
+  margin: 30px;
+}
+body #root .alltogether .switch {
+  display: flex;
+  justify-content: space-between;
+}
+body #root .alltogether .switch h2 {
+  font-size: 27px;
+}
+body #root .alltogether .switch .themes {
+  display: flex;
+  align-items: center;
+}
+body #root .alltogether .switch .themes .texttheme {
+  font-size: 10px;
+}
+body #root .alltogether .switch .themes .oneortwo {
+  margin-bottom: 20px;
+}
+body #root .alltogether .switch .themes .oneortwo .oneortwonumbers {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+body #root .alltogether .switch .themes .oneortwo .oneortwonumbers span {
+  font-size: 10px;
+}
+body #root .alltogether .number {
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+body #root .alltogether .buttons {
+  padding: 20px;
+  border-radius: 10px;
+}
+body #root .alltogether .buttons button {
+  width: 95px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+}
+body #root .alltogether .buttons .delete {
+  color: hsl(0, 0%, 100%);
+}
+body #root .alltogether .buttons .reset {
+  width: 210px;
+  color: hsl(0, 0%, 100%);
+}
+body #root .alltogether .buttons .equal {
+  width: 210px;
+  color: hsl(0, 0%, 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.light-theme .switch h2 {
+  color: hsl(60, 10%, 19%);
+}
+.light-theme .switch .themes .texttheme {
+  color: hsl(60, 10%, 19%);
+}
+.light-theme .switch .themes .oneortwo .oneortwonumbers {
+  color: hsl(60, 10%, 19%);
+}
+.light-theme .number {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(60, 10%, 19%);
+}
+.light-theme .buttons {
+  background-color: hsl(0, 5%, 81%);
+}
+.light-theme .buttons button {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(30, 25%, 89%);
+  border: transparent;
+  border-bottom: 3px solid hsl(28, 16%, 65%);
+}
+.light-theme .buttons button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.light-theme .buttons .delete {
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: 3px solid hsl(185, 58%, 25%);
+}
+.light-theme .buttons .delete:hover {
+  background-color: hsl(225, 35%, 77%);
+}
+.light-theme .buttons .reset {
+  background-color: hsl(185, 42%, 37%);
+  border-bottom: 3px solid hsl(185, 58%, 25%);
+}
+.light-theme .buttons .reset:hover {
+  background-color: hsl(225, 35%, 77%);
+}
+.light-theme .buttons .equal {
+  background-color: hsl(25, 98%, 40%);
+  border-bottom: 3px solid hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+.light-theme .buttons .equal:hover {
+  background-color: hsl(5, 78%, 67%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-theme .switch h2 {
+  color: hsl(0, 0%, 100%);
 }
+.dark-theme .switch .themes .texttheme {
+  color: hsl(0, 0%, 100%);
+}
+.dark-theme .switch .themes .oneortwo .oneortwonumbers {
+  color: hsl(0, 0%, 100%);
+}
+.dark-theme .number {
+  background-color: hsl(224, 36%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.dark-theme .buttons {
+  background-color: hsl(223, 31%, 20%);
+}
+.dark-theme .buttons button {
+  color: hsl(223, 31%, 20%);
+  background-color: hsl(30, 25%, 89%);
+  border: transparent;
+  border-bottom: 3px solid hsl(28, 16%, 65%);
+}
+.dark-theme .buttons button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.dark-theme .buttons .delete {
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 3px solid hsl(224, 28%, 35%);
+}
+.dark-theme .buttons .delete:hover {
+  background-color: hsl(225, 35%, 77%);
+}
+.dark-theme .buttons .reset {
+  background-color: hsl(225, 21%, 49%);
+  border-bottom: 3px solid hsl(224, 28%, 35%);
+}
+.dark-theme .buttons .reset:hover {
+  background-color: hsl(225, 35%, 77%);
+}
+.dark-theme .buttons .equal {
+  background-color: hsl(6, 63%, 50%);
+  border-bottom: 3px solid hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+}
+.dark-theme .buttons .equal:hover {
+  background-color: hsl(5, 78%, 67%);
+}/*# sourceMappingURL=App.css.map */
