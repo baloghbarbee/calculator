@@ -1,3 +1,10 @@
+# Provided Design#
+<img width="928" alt="Screenshot 2024-01-26 at 18 19 43" src="https://github.com/baloghbarbee/calculator/assets/86192114/c1c22af7-12bc-444e-b907-e3e7f385e050">
+
+#My design#
+<img width="950" alt="Screenshot 2024-01-26 at 18 19 15" src="https://github.com/baloghbarbee/calculator/assets/86192114/02b9f081-4e4b-4cfa-9c10-421b51d1aa97">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
